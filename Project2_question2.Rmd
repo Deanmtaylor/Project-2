@@ -1,7 +1,9 @@
 ---
 title: "R Notebook"
-Author: "Dean Taylor"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
+Author: Dean Taylor
 ---
 
 ```{r}
@@ -18,7 +20,6 @@ We're now going to preform a principle component analysis on this data set.
 library(Matrix)
 dim(Mt)
 head(Mt[,-1])
-tail(Mt.2)
 
 library(mice)
 library(corrplot)
